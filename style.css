@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fc;
+    color: #202b45;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    box-shadow: 0 2px 15px #18264a12;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #3548a5;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #35415c;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #5267dc;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    color: white;
+    background: linear-gradient(135deg, #253b80, #6579e8);
+}
+
+.tagline {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 18px;
+}
+
+#searchInput {
+    width: min(500px, 95%);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.section {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px #253b800c;
+}
+
+.section h2 {
+    font-size: 26px;
+}
+
+.subtitle {
+    color: #778198;
+    margin: 5px 0 24px;
+}
+
+.faq-item {
+    border: 1px solid #e5e9f2;
+    border-radius: 10px;
+    margin: 12px 0;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    background: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #27365b;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.faq-question:hover {
+    background: #f0f3ff;
+}
+
+.faq-answer {
+    padding: 0 18px 18px;
+    color: #606c83;
+}
+
+.admin-section {
+    border-top: 4px solid #6579e8;
+}
+
+#faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#faqForm label {
+    font-weight: 600;
+}
+
+#faqForm input,
+#faqForm textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d6dceb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#faqForm input:focus,
+#faqForm textarea:focus {
+    outline: 2px solid #aab5ff;
+}
+
+#faqForm button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #3548a5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#faqForm button:hover {
+    background: #26377f;
+}
+
+#statusMessage {
+    color: #28794b;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #778198;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+
+    .section {
+        margin: 25px 12px;
+        padding: 22px 16px;
+    }
+}
